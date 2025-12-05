@@ -14,6 +14,6 @@ import { LeaguesModule } from '../leagues/leagues.module'; // 👈 ייבוא ה
   ],
   controllers: [MatchesController],
   providers: [MatchesService],
-  exports: [MatchesService],
+  exports: [MatchesService, MongooseModule],
 })
 export class MatchesModule {}

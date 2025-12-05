@@ -12,5 +12,6 @@ import { TeamsModule } from '../teams/teams.module'; // 👈 ייבוא
   ],
   controllers: [PlayersController],
   providers: [PlayersService],
+  exports: [MongooseModule],
 })
 export class PlayersModule {}
