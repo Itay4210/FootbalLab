@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { TeamsModule } from './modules/teams/teams.module'; // 👈 ייבוא המודול החדש
+import { TeamsModule } from './modules/teams/teams.module';
 import { PlayersModule } from './modules/players/players.module';
 import { LeaguesModule } from './modules/leagues/leagues.module';
 import { MatchesModule } from './modules/matches/matches.module';
@@ -17,7 +17,7 @@ import { ScheduleModule } from '@nestjs/schedule';
     PlayersModule,
     LeaguesModule ,
     MatchesModule,
-    SimulationModule// 👈 חיבור המודול למערכת
+    SimulationModule
   ],
   controllers: [AppController],
   providers: [AppService],
