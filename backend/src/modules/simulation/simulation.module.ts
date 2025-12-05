@@ -7,9 +7,9 @@ import { PlayersModule } from '../players/players.module';
 
 @Module({
   imports: [
-    MatchesModule, // גישה למשחקים
-    TeamsModule,   // גישה לכוח של הקבוצות
-    PlayersModule, // גישה לשחקנים (כובשים)
+    MatchesModule,
+    TeamsModule,
+    PlayersModule,
   ],
   controllers: [SimulationController],
   providers: [SimulationService],
